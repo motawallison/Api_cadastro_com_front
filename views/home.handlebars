@@ -1,11 +1,15 @@
-<h1>Lista de produtos</h1>
-
-{{#each  produtos}}
-
-<h1>{{dataValues.nome}}</h1>
-<p>{{dataValues.preco}}</p>
-<hr>
-
-{{/each}}
-
-<a href="/produtos"> <button>CADASTRAR PRODUTOS</button></a>
+<main>
+    <article>
+        <h1>Lista de produtos</h1>
+        
+        {{#each  produtos}}
+        
+        <h2>{{dataValues.nome}}</h2>
+        <p>Preço: R${{dataValues.preco}},00</p>
+        <hr>
+        
+        {{/each}}
+        
+        <a href="/produtos"> <button>CADASTRAR PRODUTOS</button></a>
+    </article>
+</main>

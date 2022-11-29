@@ -8,6 +8,9 @@ const app = express();
 app.engine('handlebars', handlebars.engine({defaultLayout: 'main'}))
 app.set('view engine', 'handelbars');
 
+//style
+app.use(express.static('public'))
+
 //Body-Parser
 app.use(express.urlencoded({extended: false }));
 app.use(express.json());

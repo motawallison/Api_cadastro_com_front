@@ -1,0 +1,70 @@
+@charset "UTF-08";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root{
+    --cor1: #373755;
+    --cor2: #cfcfe2;
+    --cor3: #ffffff;
+    --cor4: #0e0e4a;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+body{
+    background-color: var(--cor3);
+    
+}
+
+
+article{
+    background-color: var(--cor1);
+    font-family: 'Roboto', sans-serif;
+    color: var(--cor3);
+    margin: auto;
+    margin-top: 10%;
+    padding: 1em;
+    max-width: 20em;
+    background-color: var(--cor1);
+    border-radius: 1em;
+}
+
+h1, h3, p{
+    padding: 0.5em 0;
+    
+}
+
+h1{
+    font-size: 2em;
+}
+
+button{
+    text-decoration: none;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font:  15px 'Roboto', sans-serif ;
+    margin: 1em 0;
+    border-radius: 1em;
+    width: 18em;
+    height: 2.5em;
+    background-color: var(--cor2);
+    color: var(--cor4);
+
+}
+
+hr{
+    margin: 1em 0;
+}
+
+button:hover{
+    
+    background-color: var(--cor4);
+    color: var(--cor2);
+    font: bold 15px 'Roboto', sans-serif ;
+
+}
