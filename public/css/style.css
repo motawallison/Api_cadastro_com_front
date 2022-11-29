@@ -22,14 +22,13 @@ body{
 }
 
 
-article{
+.home{
     background-color: var(--cor1);
     font-family: 'Roboto', sans-serif;
     color: var(--cor3);
     margin: auto;
-    margin-top: 10%;
     padding: 1em;
-    max-width: 20em;
+    max-width: 30em;
     background-color: var(--cor1);
     border-radius: 1em;
 }
@@ -41,6 +40,36 @@ h1, h3, p{
 
 h1{
     font-size: 2em;
+    text-align: center;
+}
+
+#ProdutoCadastrado{
+    font-size: 1.7em;
+    text-align: center;
+}
+
+.CadastroDeProdutos{
+    background-color: var(--cor1);
+    font-family: 'Roboto', sans-serif;
+    color: var(--cor3);
+    margin: auto;
+    padding: 1em;
+    max-width: 30em;
+    background-color: var(--cor1);
+    border-radius: 1em;
+    margin-top: 12%;
+}
+
+.prodCadastrado{
+    background-color: var(--cor1);
+    font-family: 'Roboto', sans-serif;
+    color: var(--cor3);
+    margin: auto;
+    padding: 1em;
+    max-width: 30em;
+    background-color: var(--cor1);
+    border-radius: 1em;
+    margin-top: 15%;
 }
 
 button{
@@ -54,9 +83,11 @@ button{
     height: 2.5em;
     background-color: var(--cor2);
     color: var(--cor4);
-
 }
-
+div{
+    width: 18em;
+    margin: auto;
+}
 hr{
     margin: 1em 0;
 }

@@ -1,5 +1,5 @@
 <main>
-    <article>
+    <article class="CadastroDeProdutos">
         <h1>Cadastrar produtos</h1>
         
         <form action="/addProdutos" method="POST">
@@ -8,15 +8,20 @@
             <input type="text" name="nome" placeholder="Nome do produto">
         
             <p>Preço: </p>
-            <input type="number" name="preco" placeholder="R$ 0.00"><hr>
-        
-            <button type="submit">
-                Enviar
-            </button>
+            <input type="number" step="0.01" name="preco" placeholder="R$ 0.00"><hr>
+            <div>
+                <button type="submit">
+                    Enviar
+                </button>
+            </div>
         
         </form>
         
-        <a href="/"> <button>LISTA DE PRODUTOS</button></a>
+        <div>
+            <a href="/"> <button>LISTA DE PRODUTOS</button></a>
+        </div>
     </article>
 </main>
+
+
 

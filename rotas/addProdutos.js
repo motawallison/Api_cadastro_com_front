@@ -9,7 +9,7 @@ router.post('/', function(req, res){
         preco: req.body.preco
 
     }).then(function(){
-        res.send('Produto cadastrado')
+        res.render('prodCadastrado.handlebars')
     }).catch(function(erro){
         res.send(`ERRO: Produto não cadastrado ${erro}`)
     })
