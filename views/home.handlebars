@@ -6,10 +6,16 @@
         
         <h2>{{dataValues.nome}}</h2>
         <p>Preço: R${{dataValues.preco}},00</p>
+
+        <form action="/apagarProdutos/{{dataValues.id}}" method="POST" class="delete">
+            <button id="excluir">EXCLUIR</button>
+        </form>
         <hr>
-        
+
         {{/each}}
         
-        <div><a href="/produtos"> <button>CADASTRAR PRODUTOS</button></a></div>
+        <div class="cadastrar">
+            <a href="/produtos"> <button>CADASTRAR PRODUTOS</button></a>
+        </div>
     </article>
 </main>

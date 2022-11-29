@@ -76,7 +76,7 @@ button{
     text-decoration: none;
     border: none;
     font-family: 'Roboto', sans-serif;
-    font:  15px 'Roboto', sans-serif ;
+    font:  15px;
     margin: 1em 0;
     border-radius: 1em;
     width: 18em;
@@ -84,10 +84,21 @@ button{
     background-color: var(--cor2);
     color: var(--cor4);
 }
-div{
+.verprodutos, .cadastrar, .todosProdutos{
     width: 18em;
-    margin: auto;
+    margin: auto; 
 }
+
+.delete, #excluir{
+    width: 5em;
+    margin-right: auto;
+    border-radius: 0.2em;
+    height: 1.5em;
+    margin: 0;
+    margin-bottom: 0.3em;
+
+}
+
 hr{
     margin: 1em 0;
 }

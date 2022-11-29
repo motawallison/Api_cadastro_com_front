@@ -20,6 +20,7 @@ const rotaProdutos = require('./rotas/produtos');
 const rotaPedidos = require('./rotas/pedidos');
 const rotaHome = require('./rotas/home')
 const rotaaddProdutos = require('./rotas/addProdutos')
+const rotaapagarProdutos = require('./rotas/apagarProdutos')
 
 
 //estabelecendo uso das rotas
@@ -27,7 +28,7 @@ app.use('/produtos', rotaProdutos);
 app.use('/pedidos', rotaPedidos);
 app.use('/', rotaHome)
 app.use('/addProdutos', rotaaddProdutos)
-
+app.use('/apagarProdutos', rotaapagarProdutos)
 
 
 module.exports = app;
