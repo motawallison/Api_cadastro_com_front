@@ -1,15 +1,20 @@
 <main>
     <article class="home">
         <h1>Lista de produtos</h1>
-        
+  
         {{#each  produtos}}
         
-        <h2>{{dataValues.nome}}</h2>
-        <p>Preço: R${{dataValues.preco}},00</p>
+        <uppercase>
+            <h2>{{dataValues.nome}}</h2>
+        </uppercase>
+        <p >Preço: R$ {{dataValues.preco}}</p>
 
         <form action="/apagarProdutos/{{dataValues.id}}" method="POST" class="delete">
             <button id="excluir">EXCLUIR</button>
         </form>
+
+        <a href="/edicao/{{dataValues.id}}"><button>Editar</button></a>
+
         <hr>
 
         {{/each}}
@@ -18,4 +23,5 @@
             <a href="/produtos"> <button>CADASTRAR PRODUTOS</button></a>
         </div>
     </article>
+
 </main>

@@ -15,20 +15,28 @@ app.use(express.static('public'))
 app.use(express.urlencoded({extended: false }));
 app.use(express.json());
 
-//exportando as rotas
-const rotaProdutos = require('./rotas/produtos');
-const rotaPedidos = require('./rotas/pedidos');
+//importando as rotas
 const rotaHome = require('./rotas/home')
-const rotaaddProdutos = require('./rotas/addProdutos')
-const rotaapagarProdutos = require('./rotas/apagarProdutos')
+const rotaProdutos = require('./rotas/produtos');
+const rotaAddProdutos = require('./rotas/addProdutos')
+const rotaPedidos = require('./rotas/pedidos');
+const rotaApagarProdutos = require('./rotas/apagarProdutos')
+const rotaEdicao = require('./rotas/edicao')
+const rotaEditarProdutos = require('./rotas/editarProdutos')
 
 
 //estabelecendo uso das rotas
-app.use('/produtos', rotaProdutos);
-app.use('/pedidos', rotaPedidos);
+app.use('/produtos', rotaProdutos)
+app.use('/pedidos', rotaPedidos)
 app.use('/', rotaHome)
-app.use('/addProdutos', rotaaddProdutos)
-app.use('/apagarProdutos', rotaapagarProdutos)
-
+app.use('/addProdutos', rotaAddProdutos)
+app.use('/apagarProdutos', rotaApagarProdutos)
+app.use('/edicao', rotaEdicao)
+app.use('/editarProdutos', rotaEditarProdutos)
 
 module.exports = app;
+
+
+
+
+
